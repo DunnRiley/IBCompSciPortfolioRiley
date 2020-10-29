@@ -16,6 +16,4 @@ public class Nand {
             out=true;
         }
     }
-
-
 }
