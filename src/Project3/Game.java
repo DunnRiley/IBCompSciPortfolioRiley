@@ -54,20 +54,22 @@ public class Game extends JPanel{
                         if(array[j][2]==1||array[j][2]==2){break;}
                         else {
                             array[j][2] = 2;
-                            buttonClicked.setText("Y");
+                            buttonClicked.setText("O");
                             x = true;
                         }
                     }
                 }
             }
-            if(array[0][2]==array[1][2] && array[1][2]==array[2][2]){ if(array[0][2]==1){ System.out.println("X wins"); endGame();}else if(array[0][2]==2){ System.out.println("Y wins");endGame();}
-            }else if(array[3][2]==array[4][2] && array[4][2]==array[5][2]){ if(array[3][2]==1){ System.out.println("X wins");endGame();}else if(array[3][2]==2){ System.out.println("Y wins");endGame();}
-            }else if(array[6][2]==array[7][2] && array[7][2]==array[8][2]){if(array[6][2]==1){ System.out.println("X wins"); endGame();}else if(array[6][2]==2){ System.out.println("Y wins"); endGame();}
-            }else if(array[0][2]==array[3][2] && array[3][2]==array[6][2]){ if(array[0][2]==1){ System.out.println("X wins"); endGame();}else if(array[0][2]==2){ System.out.println("Y wins"); endGame();}
-            }else if(array[1][2]==array[3][2] && array[3][2]==array[7][2]) { if(array[1][2]==1){ System.out.println("X wins");endGame(); }else if(array[1][2]==2){ System.out.println("Y wins"); endGame();}
-            }else if(array[2][2]==array[5][2] && array[5][2]==array[8][2]) { if(array[2][2]==1){ System.out.println("X wins");endGame(); }else if(array[2][2]==2){ System.out.println("Y wins"); endGame();}
-            }else if(array[0][2]==array[4][2] && array[4][2]==array[8][2]) { if(array[0][2]==1){ System.out.println("X wins");endGame(); }else if(array[0][2]==2){ System.out.println("Y wins"); endGame();}
-            }else if(array[2][2]==array[4][2] && array[4][2]==array[6][2]) { if(array[2][2]==1){ System.out.println("X wins"); endGame();}else if(array[2][2]==2){System.out.println("Y wins"); endGame(); }
+            if(array[0][2]==array[1][2] && array[1][2]==array[2][2]){ if(array[0][2]==1){ System.out.println("X wins"); endGame();}else if(array[0][2]==2){ System.out.println("O wins");endGame();}
+            }else if(array[3][2]==array[4][2] && array[4][2]==array[5][2]){ if(array[3][2]==1){ System.out.println("X wins");endGame();}else if(array[3][2]==2){ System.out.println("O wins");endGame();}
+            }else if(array[6][2]==array[7][2] && array[7][2]==array[8][2]){if(array[6][2]==1){ System.out.println("X wins"); endGame();}else if(array[6][2]==2){ System.out.println("O wins"); endGame();}
+            }else if(array[0][2]==array[3][2] && array[3][2]==array[6][2]){ if(array[0][2]==1){ System.out.println("X wins"); endGame();}else if(array[0][2]==2){ System.out.println("O wins"); endGame();}
+            }else if(array[1][2]==array[4][2] && array[4][2]==array[7][2]) { if(array[1][2]==1){ System.out.println("X wins");endGame(); }else if(array[1][2]==2){ System.out.println("O wins"); endGame();}
+            }else if(array[2][2]==array[5][2] && array[5][2]==array[8][2]) { if(array[2][2]==1){ System.out.println("X wins");endGame(); }else if(array[2][2]==2){ System.out.println("O wins"); endGame();}
+            }else if(array[0][2]==array[4][2] && array[4][2]==array[8][2]) { if(array[0][2]==1){ System.out.println("X wins");endGame(); }else if(array[0][2]==2){ System.out.println("O wins"); endGame();}
+            }else if(array[2][2]==array[4][2] && array[4][2]==array[6][2]) { if(array[2][2]==1){ System.out.println("X wins"); endGame();}else if(array[2][2]==2){System.out.println("O wins"); endGame(); }
+            }else{
+                System.out.println("No one wins");
             }
         }
     }
